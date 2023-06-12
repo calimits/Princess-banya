@@ -4,6 +4,9 @@
 #include <string>
 using std::string;
 
+//We decided to have the constructors public, 'cause we decided
+//to not have character as an abstract class
+
 class Character{
     public:
     Character();
