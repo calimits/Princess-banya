@@ -5,11 +5,9 @@
 using std::string;
 
 class Character{
-    protected:
+    public:
     Character();
     Character(string);
-
-    public:
     void setname(string);
     void setlife(int);
     void setpower(int);

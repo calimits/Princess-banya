@@ -12,11 +12,11 @@ SRC = character.cpp main.cpp
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 
 #Flags I need
-FLAI = -I include
+FLAI = -I include -Wall
 
 #creating directory
 all: $(EXE)
-	mkdir $(Folder)
+	mkdir $(FOLDER) || echo "[i] directory was already created"
 	mv $(EXE) ./$(FOLDER)/$(EXE)
 
 #compiling .o

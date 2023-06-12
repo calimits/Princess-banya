@@ -6,10 +6,11 @@
 using std::cout;
 using std::endl;
 
-using std:string;
+using std::string;
 
 Character::Character(){
-    this->name="Banya";
+    const char* name2="Banya";
+    strcpy(name,name2);
     this->life=100;
     this->power=50;
     this->level=1;
@@ -29,10 +30,10 @@ void Character::setname(string name1){
     const char *aux=name1.data();
 
     if (size>=15){
-        strncpy(name,name1,14);
+        strncpy(name,aux,14);
         name[15]='\0';
     } else if (size<15){
-        strcpy(name,name1);
+        strcpy(name,aux);
     }
 }
 
@@ -56,7 +57,7 @@ char* Character::getname(){
     return this->name;
 }
 
-int Charcater::getlife(){
+int Character::getlife(){
     return this->life;
 }
 
