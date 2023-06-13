@@ -16,19 +16,22 @@ class Character{
     void setpower(int);
     void setlevel(int);
     void setpoints(int);
-    char* getname();
-    int getlife();
-    int getpower();
-    int getlevel();
-    int getpoints();
+    void setdamage(int);
+    const char* getname() const;
+    int getlife() const;
+    int getpower() const;
+    int getlevel() const;
+    int getpoints() const;
+    int getdamage() const;
     void showcharacter();
 
-    
+
     private:
     char name[15];
     int life;
     int power;
     int level;
+    int damage;
     int points;
 };
 

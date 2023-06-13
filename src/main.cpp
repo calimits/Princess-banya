@@ -4,15 +4,12 @@ using std::cin;
 using std::endl;
 
 #include "character.h"
+#include "banya.h"
 
 int main(){
-    Character lead;
-    lead.showcharacter();
-    lead.setname("wawa");
-    lead.setlevel(99);
-    lead.setpower(100);
-    cout<<endl;
-    lead.showcharacter();
+    Banya lead;
+    cout<<lead.atack()<<endl;
+    cout<<lead.spell1()<<endl;
 
     return 0;
 }

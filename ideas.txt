@@ -1,0 +1,4 @@
+para las batallas
+-defender
+-pasar un turno cargando o mas de uno
+-ataque crítico (puede fallar)
