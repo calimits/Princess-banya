@@ -15,20 +15,21 @@ class Character{
     void setlife(int);
     void setpower(int);
     void setlevel(int);
-    void setdamage(int);
+    void setpoints(int);
     char* getname();
     int getlife();
     int getpower();
     int getlevel();
-    int getdamage();
+    int getpoints();
     void showcharacter();
 
+    
     private:
     char name[15];
     int life;
     int power;
     int level;
-    int damage;
+    int points;
 };
 
 #endif

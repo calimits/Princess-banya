@@ -14,7 +14,7 @@ Character::Character(){
     this->life=100;
     this->power=50;
     this->level=1;
-    this->damage=15;
+    this->points=0;
 }
 
 Character::Character(string name1){
@@ -22,7 +22,7 @@ Character::Character(string name1){
     this->life=100;
     this->power=50;
     this->level=1;
-    this->damage=15;   
+    this->points=0;   
 }
 
 void Character::setname(string name1){
@@ -49,8 +49,8 @@ void Character::setlevel(int l){
     this->level=l;
 }
 
-void Character::setdamage(int d){
-    this->damage=d;
+void Character::setpoints(int d){
+    this->points=d;
 }
 
 char* Character::getname(){
@@ -69,8 +69,8 @@ int Character::getlevel(){
     return this->level;
 }
 
-int Character::getdamage(){
-    return this->damage;
+int Character::getpoints(){
+    return this->points;
 }
 
 void Character::showcharacter(){
@@ -78,5 +78,5 @@ void Character::showcharacter(){
     cout<<"Level: "<<level<<endl;
     cout<<"Life: "<<life<<endl;
     cout<<"Power: "<<power<<endl;
-    cout<<"Damage:  "<<damage<<endl;
+    cout<<"Points:  "<<points<<endl;
 }
