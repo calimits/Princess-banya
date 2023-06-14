@@ -7,7 +7,7 @@ vpath %.h include
 vpath %.cpp src 
 
 #.cpp to compile
-SRC = character.cpp main.cpp banya.cpp enemy.cpp
+SRC = character.cpp main.cpp banya.cpp enemy.cpp room.cpp
 #saving .o names
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 

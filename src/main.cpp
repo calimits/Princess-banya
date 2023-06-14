@@ -6,11 +6,11 @@ using std::endl;
 #include "character.h"
 #include "banya.h"
 #include "enemy.h"
+#include "room.h"
 
 int main(){
-    Enemy lead;
-    lead.setname("Perra").setlevel(99).setlife(10000);
-    lead.showcharacter();
+    Room r;
+    r.showroom();
 
     return 0;
 }
