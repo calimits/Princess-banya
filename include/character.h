@@ -11,12 +11,12 @@ class Character{
     public:
     Character();
     Character(string);
-    void setname(string);
-    void setlife(int);
-    void setpower(int);
-    void setlevel(int);
-    void setpoints(int);
-    void setdamage(int);
+    Character& setname(string);
+    Character& setlife(int);
+    Character& setpower(int);
+    Character& setlevel(int);
+    Character& setpoints(int);
+    Character& setdamage(int);
     const char* getname() const;
     int getlife() const;
     int getpower() const;

@@ -27,7 +27,7 @@ Character::Character(string name1){
     this->damage=15;
 }
 
-void Character::setname(string name1){
+Character& Character::setname(string name1){
     int size=name1.size();
     const char *aux=name1.data();
 
@@ -37,22 +37,27 @@ void Character::setname(string name1){
     } else if (size<15){
         strcpy(name,aux);
     }
+    return *this;
 }
 
-void Character::setlife(int l){
+Character& Character::setlife(int l){
     this->life=l;
+    return *this;
 }
 
-void Character::setpower(int p){
+Character& Character::setpower(int p){
     this->power=p;
+    return *this;
 }
 
-void Character::setlevel(int l){
+Character& Character::setlevel(int l){
     this->level=l;
+    return *this;
 }
 
-void Character::setpoints(int d){
+Character& Character::setpoints(int d){
     this->points=d;
+    return *this;
 }
 
 const char* Character::getname() const{
@@ -84,8 +89,9 @@ void Character::showcharacter(){
     cout<<"Points:  "<<points<<endl;
 }
 
-void Character::setdamage(int d){
+Character& Character::setdamage(int d){
     this->damage=d;
+    return *this;
 }
 
 int Character::getdamage() const{

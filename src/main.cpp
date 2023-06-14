@@ -9,8 +9,8 @@ using std::endl;
 
 int main(){
     Enemy lead;
-    cout<<lead.atack()<<endl;
-    cout<<lead.spell1()<<endl;
+    lead.setname("Perra").setlevel(99).setlife(10000);
+    lead.showcharacter();
 
     return 0;
 }
