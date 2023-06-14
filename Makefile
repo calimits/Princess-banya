@@ -12,7 +12,7 @@ SRC = character.cpp main.cpp banya.cpp enemy.cpp room.cpp
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 
 #Flags I need
-FLAI = -I include -Wall
+FLAI = -I include -Wall -MMD -MP
 
 #creating directory
 all: $(EXE)
