@@ -14,8 +14,8 @@ Banya::Banya(string name1) : Character(name1){}
 int Banya::atack(){
     int d;
     d=this->getdamage() + rand()%10; 
-    cout<<this->getname()<<"has attacked"<<endl;
-    cout<<"Damage - "<<d<<endl;
+    cout<<this->getname()<<" has attacked"<<endl;
+    cout<<"Damage -"<<d<<endl;
     return d;
 }
 
@@ -23,8 +23,8 @@ int Banya::spell1(){
     int d;
     if (this->getpower()>=25){
     d=this->getdamage()*2 + rand()%10; 
-    cout<<this->getname()<<"has attacked with fire spell"<<endl;
-    cout<<"Damage - "<<d<<endl;
+    cout<<this->getname()<<" has attacked with fire spell"<<endl;
+    cout<<"Damage -"<<d<<endl;
     this->setpower(this->getpower()-25);
     return d;
     } else {
@@ -37,8 +37,8 @@ int Banya::spell2(){
     int d;
     if (this->getpower()>=35){
     d=this->getdamage()*3 + rand()%10; 
-    cout<<this->getname()<<"has attacked with thunder spell"<<endl;
-    cout<<"Damage - "<<d<<endl;
+    cout<<this->getname()<<" has attacked with thunder spell"<<endl;
+    cout<<"Damage -"<<d<<endl;
     this->setpower(this->getpower()-35);
     return d;
      } else {
@@ -51,8 +51,8 @@ int Banya::finalspell(){
     int d;
     if (this->getpower()>=65){
     d=this->getdamage()*5 + rand()%10; 
-    cout<<this->getname()<<"has attacked with light spell"<<endl;
-    cout<<"Damage- "<<d<<endl;
+    cout<<this->getname()<<" has attacked with light spell"<<endl;
+    cout<<"Damage -"<<d<<endl;
     this->setpower(this->getpower()-65);
     return d;
      } else {

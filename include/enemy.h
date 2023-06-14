@@ -6,7 +6,7 @@
 class Enemy : public Character{
     public:
     Enemy();
-    Enemy(string)
+    Enemy(string);
     int atack();
     int atack2();
     int atack3();

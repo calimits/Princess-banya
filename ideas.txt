@@ -2,3 +2,12 @@ para las batallas
 -defender
 -pasar un turno cargando o mas de uno
 -ataque crítico (puede fallar)
+
+terminar enemy.cpp
+
+
+tipos de enemigos 
+-goblins
+-guardias
+-magos oscuros
+-caballos

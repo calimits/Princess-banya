@@ -5,9 +5,10 @@ using std::endl;
 
 #include "character.h"
 #include "banya.h"
+#include "enemy.h"
 
 int main(){
-    Banya lead;
+    Enemy lead;
     cout<<lead.atack()<<endl;
     cout<<lead.spell1()<<endl;
 
