@@ -4,4 +4,11 @@ ideas.txt
 banya.o
 enemy.o
 room.o
+main.d
+character.d
+banya.d
+enemy.d
+room.d
+funciones.txt
+
 

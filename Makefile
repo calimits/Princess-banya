@@ -31,7 +31,7 @@ $(EXE): $(OBJ)
 
 #delete files git don´t need
 clean: 
-	rm -rf *.o *.exe ./$(FOLDER)
+	rm -rf *.o *.d *.exe ./$(FOLDER)
 
 #run exetucable
 run: 

@@ -4,15 +4,15 @@
 #include "character.h"
 
 class Enemy : public Character{
-    public:
+    protected:
     Enemy();
     Enemy(string);
-    int atack();
-    int atack2();
-    int atack3();
-    int spell1();
-    int spell2();
-    int spell3();
+
+    public:
+    virtual int atack()=0;
+    virtual int atack2()=0;
+    virtual int atack3()=0;
+    virtual int atack4()=0;
 };
 
 #endif
