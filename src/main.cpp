@@ -8,9 +8,10 @@ using std::endl;
 #include "enemy.h"
 #include "room.h"
 #include "guard.h"
+#include "mage.h"
 
 int main(){
-    Guard d;
+    Mage d;
     d.showcharacter();
 
     return 0;
