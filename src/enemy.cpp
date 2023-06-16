@@ -1,8 +1,5 @@
 #include "enemy.h"
-#include <iostream>
 
-using std::cout;
-using std::endl;
 
 Enemy::Enemy() : Character(){
     this->setname("Castle Guard");

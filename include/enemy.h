@@ -12,7 +12,6 @@ class Enemy : public Character{
     virtual int atack()=0;
     virtual int atack2()=0;
     virtual int atack3()=0;
-    virtual int atack4()=0;
 };
 
 #endif

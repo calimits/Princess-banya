@@ -7,10 +7,11 @@ using std::endl;
 #include "banya.h"
 #include "enemy.h"
 #include "room.h"
+#include "guard.h"
 
 int main(){
-    Room r;
-    r.showroom();
+    Guard d;
+    d.showcharacter();
 
     return 0;
 }
