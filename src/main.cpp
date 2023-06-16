@@ -9,9 +9,10 @@ using std::endl;
 #include "room.h"
 #include "guard.h"
 #include "mage.h"
+#include "dragon.h"
 
 int main(){
-    Mage d;
+    Dragon d;
     d.showcharacter();
 
     return 0;

@@ -12,6 +12,11 @@ room.d
 funciones.txt
 mage.d
 mage.o
+dragon.d
+dragon.o
+guard.d
+guard.o
+
 
 
 
