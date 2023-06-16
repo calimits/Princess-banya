@@ -5,7 +5,7 @@ Enemy::Enemy() : Character(){
     this->setname("Castle Guard");
     this->setpower(0);
     this->setpoints(0);
-    this->setdamage(25);
+    this->setdamage(10);
 }
     
 Enemy::Enemy(string name1) : Character(name1){

@@ -1,15 +1,9 @@
-#ifndef GUARD_H
-#define GUARD_H
-
 #include "enemy.h"
 
-class Guard : public Enemy{
+class Mage : public Enemy{
     public:
-    Guard();
+    Mage();
     int atack();
     int atack2();
     int atack3();
 };
-
-
-#endif
