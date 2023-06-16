@@ -16,6 +16,8 @@ dragon.d
 dragon.o
 guard.d
 guard.o
+funBattles.d
+funBattles.o
 
 
 

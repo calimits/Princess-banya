@@ -4,6 +4,13 @@ para las batallas
 -ataque crítico (puede fallar)
 
 ******************crear banco de funciones para las batallas**************************
-******************crear funciones para mecánicas*************************************
+******************crear funciones para mecánicas**************************************
+*********************crear funciones de guardado**************************************
+********************crear clase historia**********************************************
+
+terminar la función battle
+
+
+
 
 

@@ -24,6 +24,8 @@ class Character{
     int getpoints() const;
     int getdamage() const;
     void showcharacter();
+    void showstats();
+    void showstats1();
 
 
     private:

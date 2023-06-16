@@ -89,6 +89,15 @@ void Character::showcharacter(){
     cout<<"Points:  "<<points<<endl;
 }
 
+void Character::showstats(){
+    cout<<"Name: "<<name<<"\t\t"<<"Level: "<<level<<endl;
+    cout<<"Life: "<<life<<"\t\t"<<"Power: "<<power<<endl;
+}
+
+void Character::showstats1(){
+    cout<<"Name: "<<name<<"\t\t"<<"Level: "<<level<<endl;
+}
+
 Character& Character::setdamage(int d){
     this->damage=d;
     return *this;

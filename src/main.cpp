@@ -10,10 +10,11 @@ using std::endl;
 #include "guard.h"
 #include "mage.h"
 #include "dragon.h"
+#include "funBattles.h"
+
 
 int main(){
-    Dragon d;
-    d.showcharacter();
-
+    Dragon a;
+    a.showstats1();
     return 0;
 }
