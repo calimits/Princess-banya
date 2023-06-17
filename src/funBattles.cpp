@@ -1,4 +1,5 @@
 #include "funBattles.h"
+#include "funterminal.h"
 
 #include <cstdlib>
 #include <ctime>
@@ -74,8 +75,8 @@ bool battle(Banya & banya, Enemy & enemy){
             default: 
             break;
         }
-        system("pause");
-        system("cls");
+        pause();
+        clc();
         banya.showstats();
         if (enemy.getlife()>0){
         cout<<"It's "<<enemy.getname()<<" turn "<<endl;
@@ -94,8 +95,8 @@ bool battle(Banya & banya, Enemy & enemy){
             banya.setlife(banya.getlife()-damage);
             break;
         }
-        system("pause");
-        system("cls");
+        pause();
+        clc();
         }
     }
     if (banya.getlife()<=0){

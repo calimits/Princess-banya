@@ -3,10 +3,10 @@ para las batallas
 -pasar un turno cargando o mas de uno
 -ataque crítico (puede fallar)
 
-******************crear banco de funciones para las batallas************************** (en ello)
+
 ******************crear funciones para mecánicas**************************************
 *********************crear funciones de guardado**************************************
-********************crear clase historia**********************************************
+********************crear clase historia********************************************** (cada nivel debe llamar al siguiente)
 
 terminar la función battle
 

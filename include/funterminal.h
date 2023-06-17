@@ -1,0 +1,3 @@
+
+void clc();
+void pause(); 

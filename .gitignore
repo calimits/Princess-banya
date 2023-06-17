@@ -18,6 +18,9 @@ guard.d
 guard.o
 funBattles.d
 funBattles.o
+funterminal.o
+funterminal.d
+
 
 
 
