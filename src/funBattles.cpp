@@ -8,16 +8,18 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-void battle(Banya & banya, Enemy & enemy){
+bool battle(Banya & banya, Enemy & enemy){
     srand(time(NULL));
+    Banya aux=banya;
     int option=0;
     int def=0;
     int atk=0;
     int damage=0;
     int critic=0;
     int out=0;
+    int points=0;
     while(banya.getlife()>0 && enemy.getlife()>0 && out==0){
-        banya.showstats1();
+        banya.showstats();
         cout<<"It's your turn "<<endl;
         cout<<"Select: (1)Atack (2)Critic Atack (3)Charge Atack (4)Defense ";
         if (banya.getsp1()){
@@ -35,7 +37,6 @@ void battle(Banya & banya, Enemy & enemy){
             case 1:
             damage=banya.atack();
             enemy.setlife(enemy.getlife()-damage+atk);
-            banya.showstats1();
             atk=0;
             break;
             case 2:
@@ -43,10 +44,8 @@ void battle(Banya & banya, Enemy & enemy){
             damage=banya.atack();
             if (critic==1 || critic==2){
             enemy.setlife(enemy.getlife()*5-damage+atk);
-            banya.showstats1();
             } else {
                 enemy.setlife(enemy.getlife()*5-damage+atk);
-                banya.showstats1();
             }
             atk=0;
             break;
@@ -59,17 +58,14 @@ void battle(Banya & banya, Enemy & enemy){
             case 5: 
             damage=banya.spell1();
             enemy.setlife(enemy.getlife()-damage);
-            banya.showstats1();
             break;
             case 6: 
             damage=banya.spell2();
             enemy.setlife(enemy.getlife()-damage);
-            banya.showstats1();
             break;
             case 7: 
             damage=banya.finalspell();
             enemy.setlife(enemy.getlife()-damage);
-            banya.showstats1();
             break;
             case 8:
             cout<<"Banya has abandoned the battle "<<endl;
@@ -78,25 +74,40 @@ void battle(Banya & banya, Enemy & enemy){
             default: 
             break;
         }
+        system("pause");
+        system("cls");
+        banya.showstats();
+        if (enemy.getlife()>0){
         cout<<"It's "<<enemy.getname()<<" turn "<<endl;
         option=rand()%3+1;
             switch (option){
             case 1: 
             damage=enemy.atack();
             banya.setlife(banya.getlife()-damage);
-            banya.showstats();
             break;
             case 2: 
             damage=enemy.atack2();
             banya.setlife(banya.getlife()-damage);
-            banya.showstats();
             break;
             case 3: 
             damage=enemy.atack3();
             banya.setlife(banya.getlife()-damage);
-            banya.showstats();
             break;
         }
-
+        system("pause");
+        system("cls");
+        }
     }
+    if (banya.getlife()<=0){
+        cout<<"You lost"<<endl;
+        return 0;
+    } else if (enemy.getlife()<=0){
+        cout<<"You won"<<endl;
+        points=enemy.getlevel()*10;
+        banya=aux;
+        banya.setpoints(banya.getpoints()+points);
+        cout<<"Your earned "<<points<<" points of experience "<<endl;
+        return 1;
+    }
+    return 1;
 }

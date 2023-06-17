@@ -2,4 +2,4 @@
 
 #include "enemy.h"
 
-void battle(Banya & banya, Enemy & enemy);
+bool battle(Banya & banya, Enemy & enemy);

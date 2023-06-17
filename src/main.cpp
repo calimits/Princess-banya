@@ -14,7 +14,8 @@ using std::endl;
 
 
 int main(){
-    Dragon a; 
-    a.showstats1();
+    Banya a;
+    Guard b; 
+    battle(a,b);
     return 0;
 }
