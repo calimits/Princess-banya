@@ -80,8 +80,8 @@ void level_library(Banya & banya, int *progress, int lose){
     }
     if (cont==4){
         progress[0]=1;
-        cout<<"You defeated them all, and your reward is 20 points of damage"<<endl;
-        banya.setdamage(banya.getdamage()+20);
+        cout<<"You defeated them all, and your reward is 50 points of power"<<endl;
+        banya.setpower(banya.getpower()+50);
     }
 
     for(int i=0; i<4; i++){
@@ -90,14 +90,95 @@ void level_library(Banya & banya, int *progress, int lose){
 
 }
 
-/*
-void level_armor(Banya & banya, int *progress, int lose){
 
+void level_armor(Banya & banya, int *progress, int lose){
+    cout<<"You're in the Armor hall"<<endl;
+    cout<<"There are 7 enemies to defeat"<<endl;
+    cout<<"Prepare to fight"<<endl;
+    pause();
+    clc();
+    //Creating dinamic enemies
+    Enemy *enemies[7];
+    for(int i=0; i<7; i++){
+        enemies[i]=new Guard;
+    }
+
+    enemies[0]->setlevel(4).setdamage(17);
+    enemies[1]->setlevel(3).setdamage(13);
+    enemies[2]->setlevel(6).setdamage(11);
+    enemies[3]->setlevel(5).setdamage(15);
+    enemies[4]->setlevel(8).setdamage(20);
+    enemies[5]->setlevel(9).setdamage(23);
+    enemies[6]->setlevel(10).setdamage(25);
+
+    bool result;
+    int cont=0;
+    for(int i=0;i<7;i++){
+        result=battle(banya, *(enemies[i]));
+        if (!result){
+            lose=1;
+            break;
+        } else {
+            cout<<"Congratulations, keep fighting"<<endl;
+            cont++;
+        }
+    }
+    if (cont==7){
+        progress[2]=1;
+        cout<<"You defeated them all, and your reward is 20 points of damage"<<endl;
+        banya.setdamage(banya.getdamage()+20);
+    }
+
+    for(int i=0; i<7; i++){
+        delete enemies[i];
+    }
 }
 
 void level_music(Banya & banya, int *progress, int lose){
+    cout<<"You're in the Music hall"<<endl;
+    cout<<"There are 5 enemies to defeat"<<endl;
+    cout<<"Prepare to fight"<<endl;
+    pause();
+    clc();
+    //Creating dinamic enemies
+    Enemy *enemies[5];
+    for(int i=0; i<2; i++){
+        enemies[i]=new Mage;
+    }
 
+    for(int i=3; i<4; i++){
+        enemies[i]=new Guard;
+    }
+
+    enemies[0]->setlevel(4).setdamage(10);
+    enemies[1]->setlevel(3).setdamage(9);
+    enemies[2]->setlevel(6).setdamage(13);
+    enemies[3]->setlevel(7).setdamage(15);
+    enemies[4]->setlevel(8).setdamage(20);
+
+    bool result;
+    int cont=0;
+    for(int i=0;i<5;i++){
+        result=battle(banya, *(enemies[i]));
+        if (!result){
+            lose=1;
+            break;
+        } else {
+            cout<<"Congratulations, keep fighting"<<endl;
+            cont++;
+        }
+    }
+    if (cont==7){
+        progress[2]=1;
+        cout<<"You defeated them all, and your reward is 75 points of life"<<endl;
+        banya.setlife(banya.getlife()+75);
+    }
+
+    for(int i=0; i<5; i++){
+        delete enemies[i];
+    }
 }
-*/
+
+
 
 

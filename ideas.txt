@@ -7,8 +7,8 @@ para las batallas
 *********************crear funciones de guardado**************************************
 
 function verifyevolve() crear
+terminar la función battle meter dentro verifyevolve
 
-terminar la función battle
 
 
 
