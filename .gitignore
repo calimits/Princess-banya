@@ -20,6 +20,8 @@ funBattles.d
 funBattles.o
 funterminal.o
 funterminal.d
+mecanic.o
+mecanic.d
 
 
 

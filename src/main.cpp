@@ -11,11 +11,12 @@ using std::endl;
 #include "mage.h"
 #include "dragon.h"
 #include "funBattles.h"
+#include "mecanic.h"
 
 
 int main(){
     Banya a;
     Guard b; 
-    battle(a,b);
+
     return 0;
 }
