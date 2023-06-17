@@ -7,3 +7,4 @@ class Mage : public Enemy{
     int atack2();
     int atack3();
 };
+

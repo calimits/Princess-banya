@@ -7,9 +7,20 @@
 using std::cout;
 using std::endl;
 
-Banya::Banya() : Character(){}
+Banya::Banya() : Character(){
+    this->at=0;
+    this->sp1=0;
+    this->sp2=0;
+    this->fsp=0;
 
-Banya::Banya(string name1) : Character(name1){}
+}
+
+Banya::Banya(string name1) : Character(name1){
+    this->at=0;
+    this->sp1=0;
+    this->sp2=0;
+    this->fsp=0;
+}
 
 int Banya::atack(){
     int d;
@@ -69,4 +80,48 @@ void Banya::evolve(){
     this->setdamage(this->getdamage()+3);
     this->setlevel(this->getlevel()+1);
     cout<<endl;
+}
+
+Banya & Banya::setat(int a){
+    if (a==0 || a==1)
+    this->at=a;
+    else
+    this->at=0;
+}
+
+Banya & Banya::setsp1(int a){
+    if (a==0 || a==1)
+    this->sp1=a;
+    else
+    this->sp1=0;
+}
+
+Banya & Banya::setsp2(int a){
+    if (a==0 || a==1)
+    this->sp2=a;
+    else
+    this->sp2=0;
+}
+
+Banya & Banya::setfsp(int a){
+    if (a==0 || a==1)
+    this->fsp=a;
+    else
+    this->fsp=0;
+}
+
+bool Banya::getat(){
+    return this->at;
+}
+
+bool Banya::getsp1(){
+    return this->sp1;
+}
+
+bool Banya::getsp2(){
+    return this->sp2;
+}
+
+bool Banya::getfsp(){
+    return this->fsp;
 }

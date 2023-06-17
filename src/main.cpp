@@ -14,7 +14,7 @@ using std::endl;
 
 
 int main(){
-    Dragon a;
+    Dragon a; 
     a.showstats1();
     return 0;
 }
