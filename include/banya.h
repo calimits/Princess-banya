@@ -12,10 +12,10 @@ class Banya : public Character{
     int spell2();
     int finalspell();
     void evolve();
-    Banya & setat();
-    Banya & setsp1();
-    Banya & setsp2();
-    Banya & setfsp();
+    Banya & setat(int);
+    Banya & setsp1(int);
+    Banya & setsp2(int);
+    Banya & setfsp(int);
     bool getat();
     bool getsp1();
     bool getsp2();

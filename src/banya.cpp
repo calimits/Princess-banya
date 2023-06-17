@@ -87,6 +87,7 @@ Banya & Banya::setat(int a){
     this->at=a;
     else
     this->at=0;
+    return *this;
 }
 
 Banya & Banya::setsp1(int a){
@@ -94,6 +95,7 @@ Banya & Banya::setsp1(int a){
     this->sp1=a;
     else
     this->sp1=0;
+    return *this;
 }
 
 Banya & Banya::setsp2(int a){
@@ -101,6 +103,7 @@ Banya & Banya::setsp2(int a){
     this->sp2=a;
     else
     this->sp2=0;
+    return *this;
 }
 
 Banya & Banya::setfsp(int a){
@@ -108,6 +111,7 @@ Banya & Banya::setfsp(int a){
     this->fsp=a;
     else
     this->fsp=0;
+    return *this;
 }
 
 bool Banya::getat(){
