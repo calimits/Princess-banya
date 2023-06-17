@@ -1,5 +1,6 @@
 #include "funBattles.h"
 #include "funterminal.h"
+#include "mecanic.h"
 
 #include <cstdlib>
 #include <ctime>
@@ -95,8 +96,11 @@ bool battle(Banya & banya, Enemy & enemy){
             banya.setlife(banya.getlife()-damage);
             break;
         }
-        pause();
-        clc();
+        } else {
+            cout<<endl;
+            cout<<enemy.getname()<<" defeated"<<endl;
+            pause();
+            clc();
         }
     }
     if (banya.getlife()<=0){
@@ -108,6 +112,7 @@ bool battle(Banya & banya, Enemy & enemy){
         banya=aux;
         banya.setpoints(banya.getpoints()+points);
         cout<<"Your earned "<<points<<" points of experience "<<endl;
+        verify_evolve(banya);
         return 1;
     }
     return 1;

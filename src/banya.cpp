@@ -8,7 +8,7 @@ using std::cout;
 using std::endl;
 
 Banya::Banya() : Character(){
-    this->at=0;
+    this->at=1;
     this->sp1=0;
     this->sp2=0;
     this->fsp=0;
@@ -74,7 +74,7 @@ int Banya::finalspell(){
 
 void Banya::evolve(){
     this->setpoints(0);
-    cout<<"Banya has reached level "<<this->getlevel()<<endl;
+    cout<<"Banya has reached level "<<this->getlevel()+1<<endl;
     this->setlife(this->getlife()+10);
     this->setpower(this->getpower()+3);
     this->setdamage(this->getdamage()+3);

@@ -15,5 +15,6 @@ void level_library(Banya &, int *, int);
 void level_armor(Banya &, int *, int);
 void level_music(Banya &, int *, int);
 
+void verify_evolve(Banya &);
 
 #endif

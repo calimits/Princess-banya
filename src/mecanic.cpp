@@ -81,12 +81,16 @@ void level_library(Banya & banya, int *progress, int lose){
     if (cont==4){
         progress[0]=1;
         cout<<"You defeated them all, and your reward is 50 points of power"<<endl;
+        cout<<"You also recieve thunder spell, use it wisely"<<endl;
+        banya.setsp2(1);
         banya.setpower(banya.getpower()+50);
     }
 
+    
     for(int i=0; i<4; i++){
         delete enemies[i];
     }
+    
 
 }
 
@@ -171,6 +175,8 @@ void level_music(Banya & banya, int *progress, int lose){
     if (cont==7){
         progress[2]=1;
         cout<<"You defeated them all, and your reward is 75 points of life"<<endl;
+        cout<<"You also recieve fire spell, use it wisely"<<endl;
+        banya.setsp1(1);
         banya.setlife(banya.getlife()+75);
     }
 
@@ -179,6 +185,10 @@ void level_music(Banya & banya, int *progress, int lose){
     }
 }
 
+void verify_evolve(Banya & banya){
+    if (banya.getpoints()>=50)
+        banya.evolve();
+}
 
 
 
