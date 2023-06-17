@@ -3,6 +3,11 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+#include <fstream>
+using std::ofstream;
+using std::ifstream;
+using std::ios;
+
 #include "character.h"
 #include "banya.h"
 #include "enemy.h"
@@ -28,7 +33,7 @@ int main(){
     //Variables to mecanics
     int option=0, move=0, menu=0, progress[4]={0,0,0,0}, lose=0;
     banya.setdamage(1000);
-    level_library(banya, progress, lose);
+    
 
 
     return 0;

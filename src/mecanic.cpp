@@ -13,9 +13,10 @@ using std::cin;
 
 void select(int & option){
     option=0;
-    cout<<"(1)See tasks (2)Move (3)Menu"<<endl;
+    cout<<"(1)See tasks (2)Move (3)Menu";
+    cout<<endl;
     while(option!=1 && option!=2 && option!=3){
-        cout<<"Enter a valid option"<<endl;
+        cout<<"Enter a valid option "<<endl;
     cin>>option;
     }
 }
@@ -27,7 +28,7 @@ void seetasks(){
 }
 
 void move(int & move){
-    cout<<"Choose destiny: (1)Library (2)Armor hall (3)Music hall (4)Your room"<<endl;
+    cout<<"Choose destiny: (1)Library (2)Armor hall (3)Music hall (4)Fight dragon"<<endl;
     move=0;
     while(move!=1 && move!=2 && move!=3 && move!=4){
         cout<<"Enter a valid option"<<endl;
