@@ -4,9 +4,9 @@ para las batallas
 -ataque crítico (puede fallar)
 
 
-******************crear funciones para mecánicas**************************************
 *********************crear funciones de guardado**************************************
-********************crear clase historia********************************************** (cada nivel debe llamar al siguiente)
+
+function verifyevolve() crear
 
 terminar la función battle
 

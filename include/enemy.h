@@ -7,6 +7,7 @@ class Enemy : public Character{
     protected:
     Enemy();
     Enemy(string);
+    virtual ~Enemy(){}
 
     public:
     virtual int atack()=0;

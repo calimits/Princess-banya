@@ -4,6 +4,12 @@ using std::endl;
 using std::cin;
 
 #include "mecanic.h"
+#include "funterminal.h"
+#include "funBattles.h"
+#include "banya.h"
+#include "enemy.h"
+#include "guard.h"
+#include "mage.h"
 
 void select(int & option){
     option=0;
@@ -42,5 +48,56 @@ void seehelp(){
     //Rellenar
 }
 
+void level_library(Banya & banya, int *progress, int lose){
+    cout<<"You're in the Library"<<endl;
+    cout<<"There are 4 enemies to defeat"<<endl;
+    cout<<"Prepare to fight"<<endl;
+    pause();
+    clc();
+    //Creating dinamic enemies
+    Enemy *enemies[4];
+    for(int i=0; i<4; i++){
+        enemies[i]=new Mage;
+    }
+
+    enemies[0]->setlevel(4).setdamage(10);
+    enemies[1]->setlevel(3).setdamage(9);
+    enemies[2]->setlevel(1);
+    enemies[3]->setlevel(5).setdamage(12);
+
+
+    bool result;
+    int cont=0;
+    for(int i=3;i>=0;i--){
+        result=battle(banya, *(enemies[i]));
+        if (!result){
+            lose=1;
+            break;
+        } else {
+            cout<<"Congratulations, keep fighting"<<endl;
+            cont++;
+        }
+    }
+    if (cont==4){
+        progress[0]=1;
+        cout<<"You defeated them all, and your reward is 20 points of damage"<<endl;
+        banya.setdamage(banya.getdamage()+20);
+    }
+
+    for(int i=0; i<4; i++){
+        delete enemies[i];
+    }
+
+}
+
+/*
+void level_armor(Banya & banya, int *progress, int lose){
+
+}
+
+void level_music(Banya & banya, int *progress, int lose){
+
+}
+*/
 
 

@@ -15,8 +15,21 @@ using std::endl;
 
 
 int main(){
-    Banya a;
-    Guard b; 
+    //Building the castle
+    Room library, armor, music;
+    library.setchest(1).setenemies(4).setname("Library");
+    armor.setchest(2).setenemies(7).setname("Armor hall");
+    music.setchest(1).setenemies(5).setname("Music hall");
+    //Construidos
+
+    //Creating Banya
+    Banya banya;
+
+    //Variables to mecanics
+    int option=0, move=0, menu=0, progress[4]={0,0,0,0}, lose=0;
+    banya.setdamage(1000);
+    level_library(banya, progress, lose);
+
 
     return 0;
 }
