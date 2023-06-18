@@ -3,7 +3,7 @@
 
 #include "banya.h"
 
-void save(const Banya &, int *);
-void load(Banya &, int *);
+void save(const Banya &);
+void load(Banya &);
 
 #endif

@@ -10,7 +10,7 @@ using std::ofstream;
 using std::ifstream;
 using std::ios;
 
-void save(const Banya & banya, int *progress){
+void save(const Banya & banya){
     //Saving Character
     ofstream saveb("saves/banya.dat", ios::out | ios::binary);
     saveb.seekp(0);
@@ -21,7 +21,7 @@ void save(const Banya & banya, int *progress){
 }
 
 
-void load(Banya & banya, int *progress){
+void load(Banya & banya){
     //Load character
     ifstream loadb("saves/banya.dat", ios::in | ios::binary);
     loadb.seekg(0);
