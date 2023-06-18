@@ -19,7 +19,7 @@ using std::ios;
 #include "funBattles.h"
 #include "mecanic.h"
 #include "saveandload.h"
-
+#include "fungame.h"
 
 int main(){
     //Building the castle
@@ -33,16 +33,16 @@ int main(){
     */
 
     //Creating Banya
-    Banya banya, banya2;
-    banya.setname("Milyabra");
+    Banya banya;
+
     //Variables to mecanics
+    int op=0;
     /*
-    int option=0, move=0, menu=0, lose=0;
+    int op=0, option=0, move=0, menu=0, lose=0;
     banya.setdamage(1000);
     */
-    save(banya);
-    load(banya2);
-    banya2.showcharacter();
+    opening(op);
+    
     
     
 

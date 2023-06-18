@@ -1,13 +1,5 @@
-para las batallas
--defender
--pasar un turno cargando o mas de uno
--ataque crítico (puede fallar)
+set the game
 
-
-*********************crear funciones de guardado**************************************
-
-function verifyevolve() crear
-terminar la función battle meter dentro verifyevolve
 
 
 
