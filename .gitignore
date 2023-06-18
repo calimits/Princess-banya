@@ -24,6 +24,8 @@ mecanic.o
 mecanic.d
 saveandload.o
 saveandload.d
+fungame.o
+fungame.d
 
 
 

@@ -20,18 +20,9 @@ using std::ios;
 #include "mecanic.h"
 #include "saveandload.h"
 #include "fungame.h"
+#include "funterminal.h"
 
 int main(){
-    //Building the castle
-
-    /*
-    Room library, armor, music;
-    library.setchest(1).setenemies(4).setname("Library");
-    armor.setchest(2).setenemies(7).setname("Armor hall");
-    music.setchest(1).setenemies(5).setname("Music hall");
-    //Construidos
-    */
-
     //Creating Banya
     Banya banya;
 
@@ -41,11 +32,28 @@ int main(){
     int op=0, option=0, move=0, menu=0, lose=0;
     banya.setdamage(1000);
     */
+
+    //Starting game
     opening(op);
-    
-    
-    
+    while (op!=1 && op!=2 && op!=4){
+    switch (op){
+        case 1:
 
+        break;
+        case 2:
 
+        break;
+        case 3:
+        seehelp();
+        pause();
+        clc();
+        break;
+        case 4:
+        cout<<"You left the game"<<endl;
+        cout<<"Comeback soon"<<endl;
+        break;
+    }
+        opening(op);
+    }
     return 0;
 }

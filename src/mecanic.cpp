@@ -49,7 +49,18 @@ void menu(int & menu){
 }
 
 void seehelp(){
-    //Rellenar
+    cout<<"Controls:"<<endl;
+    cout<<"Button (1), (2), (3), (4), (5), (6), (7) and (8) "<<endl;
+    cout<<"Story: "<<endl;
+    cout<<"This is a non lineal game, you can choose your path,"<<endl;
+    cout<<"but, it's going to be easier or harder, so it's your choice."<<endl;
+    cout<<"Banya needs to get stronger to leave the castle."<<endl;
+    cout<<"Levels: "<<endl;
+    cout<<"This game has for levels, every level has a reward, get them."<<endl;
+    cout<<"To choose a level, select Move, and then select the level you want."<<endl;
+    cout<<"Level 1, level 3, level 2 and Defeat dragon is the easier way "<<endl;
+    cout<<"But, you can win the game just defeating the dragon"<<endl;
+
 }
 
 void level_library(Banya & banya, int *progress, int lose){
