@@ -30,12 +30,12 @@ void save(const Banya & banya, int *progress){
 
 void load(Banya & banya, int *progress){
     //Load character
-    ifstream loadb("saves/banya.dat", ios::in);
+    ifstream loadb("saves/banya.dat", ios::in | ios::binary);
     loadb.seekg(0);
     loadb.read(reinterpret_cast<char *>(&banya), sizeof(Banya));
 
     //load game progress
-    ifstream loadp("saves/progress.dat", ios::in | ios::binary);
+    ifstream loadp("saves/progress.dat", ios::in);
     loadp.seekg(0);
     for(int i=0; i<4; i++){
         loadp>>progress[i];

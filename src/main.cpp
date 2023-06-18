@@ -40,11 +40,11 @@ int main(){
     /*
     int option=0, move=0, menu=0, progress[4]={0,0,0,0}, lose=0;
     banya.setdamage(1000);
-    
+    */
     save(banya, progress);
     load(banya2, progress);
     banya2.showcharacter();
-    */
+    
     
 
 
