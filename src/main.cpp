@@ -25,6 +25,7 @@ int main(){
     //Creating Banya
     Banya banya;
     Dragon dragon;
+    banya.setdamage(1000);
 
     //Variables to mecanics
     
@@ -64,6 +65,12 @@ int main(){
                     pause();
                     clc();
                     level_library(banya, lose);
+                    for(int i=0;i<10;i++){
+                    save(banya);
+                    }
+                    cout<<"Saving..."<<endl;
+                    pause();
+                    clc();
                 } else if (mov==2){
                     for(int i=0;i<10;i++){
                     save(banya);
@@ -72,6 +79,12 @@ int main(){
                     pause();
                     clc();
                     level_armor(banya, lose);
+                    for(int i=0;i<10;i++){
+                    save(banya);
+                    }
+                    cout<<"Saving..."<<endl;
+                    pause();
+                    clc();
                 } else if (mov==3){
                     for(int i=0;i<10;i++){
                     save(banya);
@@ -81,6 +94,12 @@ int main(){
                     clc();
                     save(banya);
                     level_music(banya,lose);
+                    for(int i=0;i<10;i++){
+                    save(banya);
+                    }
+                    cout<<"Saving..."<<endl;
+                    pause();
+                    clc();
                 } else if (mov==4){
                     for(int i=0;i<10;i++){
                     save(banya);
@@ -141,6 +160,12 @@ int main(){
                     pause();
                     clc();
                     level_library(banya, lose);
+                    for(int i=0;i<10;i++){
+                    save(banya);
+                    }
+                    cout<<"Saving..."<<endl;
+                    pause();
+                    clc();
                 } else if (mov==2){
                     for(int i=0;i<10;i++){
                     save(banya);
@@ -149,6 +174,12 @@ int main(){
                     pause();
                     clc();
                     level_armor(banya, lose);
+                    for(int i=0;i<10;i++){
+                    save(banya);
+                    }
+                    cout<<"Saving..."<<endl;
+                    pause();
+                    clc();
                 } else if (mov==3){
                     for(int i=0;i<10;i++){
                     save(banya);
@@ -158,6 +189,12 @@ int main(){
                     clc();
                     save(banya);
                     level_music(banya,lose);
+                    for(int i=0;i<10;i++){
+                    save(banya);
+                    }
+                    cout<<"Saving..."<<endl;
+                    pause();
+                    clc();
                 } else if (mov==4){
                     for(int i=0;i<10;i++){
                     save(banya);

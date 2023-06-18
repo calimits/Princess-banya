@@ -18,9 +18,8 @@ bool battle(Banya & banya, Enemy & enemy){
     int atk=0;
     int damage=0;
     int critic=0;
-    int out=0;
     int points=0;
-    while(banya.getlife()>0 && enemy.getlife()>0 && out==0){
+    while(banya.getlife()>0 && enemy.getlife()>0){
         banya.showstats();
         cout<<"It's your turn "<<endl;
         cout<<"Select: (1)Atack (2)Critic Atack (3)Charge Atack (4)Defense ";
@@ -33,7 +32,6 @@ bool battle(Banya & banya, Enemy & enemy){
         if (banya.getfsp()){
             cout<<"(7)Light spell ";
         } 
-        cout<<"(8)Leave"<<endl;
         cin>>option;
         switch (option){
             case 1:
@@ -69,11 +67,8 @@ bool battle(Banya & banya, Enemy & enemy){
             damage=banya.finalspell();
             enemy.setlife(enemy.getlife()-damage);
             break;
-            case 8:
-            cout<<"Banya has abandoned the battle "<<endl;
-            out=1;
-            break;
             default: 
+            cout<<"You fail this turn"<<endl;
             break;
         }
         pause();
