@@ -38,6 +38,7 @@
   "C_Cpp_Runner.showCompilationTime": false,
   "files.associations": {
     "iostream": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "iosfwd": "cpp"
   }
 }
