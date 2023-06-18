@@ -34,8 +34,8 @@ int main(){
     */
 
     //Starting game
-    opening(op);
     while (op!=1 && op!=2 && op!=4){
+    opening(op);
     switch (op){
         case 1:
 
@@ -53,7 +53,6 @@ int main(){
         cout<<"Comeback soon"<<endl;
         break;
     }
-        opening(op);
     }
     return 0;
 }
