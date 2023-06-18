@@ -12,7 +12,6 @@ using std::ios;
 #include "character.h"
 #include "banya.h"
 #include "enemy.h"
-#include "room.h"
 #include "guard.h"
 #include "mage.h"
 #include "dragon.h"
