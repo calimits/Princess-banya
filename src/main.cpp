@@ -18,6 +18,7 @@ using std::ios;
 #include "dragon.h"
 #include "funBattles.h"
 #include "mecanic.h"
+#include "saveandload.h"
 
 
 int main(){
@@ -31,15 +32,18 @@ int main(){
     //Construidos
     */
 
-
-
     //Creating Banya
-    Banya banya;
-
+    Banya banya, banya2;
+    banya.setname("Mil");
+    int progress[4]={0,0,0,0};
     //Variables to mecanics
     /*
     int option=0, move=0, menu=0, progress[4]={0,0,0,0}, lose=0;
     banya.setdamage(1000);
+    
+    save(banya, progress);
+    load(banya2, progress);
+    banya2.showcharacter();
     */
     
 

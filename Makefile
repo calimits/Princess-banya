@@ -8,7 +8,7 @@ vpath %.cpp src
 
 #.cpp to compile
 SRC1 = character.cpp main.cpp banya.cpp enemy.cpp room.cpp guard.cpp mage.cpp dragon.cpp funBattles.cpp
-SRC = $(SRC1) funterminal.cpp mecanic.cpp
+SRC = $(SRC1) funterminal.cpp mecanic.cpp saveandload.cpp
 #saving .o names
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 

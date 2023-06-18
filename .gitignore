@@ -22,6 +22,8 @@ funterminal.o
 funterminal.d
 mecanic.o
 mecanic.d
+saveandload.o
+saveandload.d
 
 
 
