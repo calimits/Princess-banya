@@ -11,8 +11,8 @@ using std::string;
 Character::Character(){
     const char* name2="Banya";
     strcpy(name,name2);
-    this->life=100;
-    this->power=50;
+    this->life=200;
+    this->power=60;
     this->level=1;
     this->damage=15;
     this->points=0;

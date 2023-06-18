@@ -18,3 +18,12 @@ void opening(int & op){
         cin>>op;
     }
 }
+
+void story(){
+    cout<<"A long time ago, in a kingdom far away, there existed"<<endl;
+    cout<<"a king who condemned all of his daughters to stay in the castle forever."<<endl;
+    cout<<"In his mind he did it to protected them, but without realizing it"<<endl;
+    cout<<"he subjected them to a life of imrpisonment."<<endl;
+    cout<<"Descendants thousands of years later still remained under the same punishment,"<<endl;
+    cout<<"but, Princess Banya would not let them imprison her forever..."<<endl;
+}

@@ -95,9 +95,11 @@ void level_library(Banya & banya, int & lose){
     }
     if (cont==4){
         cout<<"You defeated them all, and your reward is 50 points of power"<<endl;
+        banya.setpower(banya.getpower()+50);
+        if (!banya.getsp2()){
         cout<<"You also recieve thunder spell, use it wisely"<<endl;
         banya.setsp2(1);
-        banya.setpower(banya.getpower()+50);
+        }
     }
 
     
@@ -143,9 +145,11 @@ void level_armor(Banya & banya, int & lose){
     }
     if (cont==7){
         cout<<"You defeated them all, and your reward is 20 points of damage"<<endl;
+        banya.setdamage(banya.getdamage()+20);
+        if (!banya.getsp1()){
         cout<<"You also recieve thunder spell, use it wisely"<<endl;
         banya.setfsp(1);
-        banya.setdamage(banya.getdamage()+20);
+        }
     }
 
     for(int i=0; i<7; i++){
@@ -189,9 +193,11 @@ void level_music(Banya & banya, int & lose){
     }
     if (cont==7){
         cout<<"You defeated them all, and your reward is 75 points of life"<<endl;
+        banya.setlife(banya.getlife()+75);
+        if (!banya.getsp1()){
         cout<<"You also recieve fire spell, use it wisely"<<endl;
         banya.setsp1(1);
-        banya.setlife(banya.getlife()+75);
+        }
     }
 
     for(int i=0; i<5; i++){
