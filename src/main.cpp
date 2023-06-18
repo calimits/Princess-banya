@@ -27,18 +27,38 @@ int main(){
     Banya banya;
 
     //Variables to mecanics
-    int op=0;
-    /*
-    int op=0, option=0, move=0, menu=0, lose=0;
-    banya.setdamage(1000);
-    */
+    
+    int op=0, option=0, move=0, men=0, lose=0;
+    
 
     //Starting game
     while (op!=1 && op!=2 && op!=4){
     opening(op);
     switch (op){
         case 1:
+        while(lose!=1){
+            select(option);
+            switch (option){
+                case 1:
+                seetasks();
+                pause();
+                clc();
+                break;
+                case 2:
 
+                break;
+                case 3:
+                menu(men);
+                if (men==1){
+                    seehelp();
+                } else if (men==2){
+                    lose=1;
+                }
+                pause();
+                clc();
+                break;
+            }
+        }
         break;
         case 2:
 
@@ -53,6 +73,7 @@ int main(){
         cout<<"Comeback soon"<<endl;
         break;
     }
+    
     }
     return 0;
 }

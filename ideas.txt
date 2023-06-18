@@ -1,4 +1,6 @@
 set the game
+add title to opening function
+
 
 
 

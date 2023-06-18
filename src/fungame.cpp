@@ -7,6 +7,7 @@ using std::endl;
 
 void opening(int & op){
     op=0;
+    cout<<"\t\t\"Princess Banya\""<<endl;
     cout<<"\t\t(1)New game"<<endl;
     cout<<"\t\t(2)Load game"<<endl;
     cout<<"\t\t(3)Help"<<endl;

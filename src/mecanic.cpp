@@ -63,7 +63,7 @@ void seehelp(){
 
 }
 
-void level_library(Banya & banya, int *progress, int lose){
+void level_library(Banya & banya, int & lose){
     cout<<"You're in the Library"<<endl;
     cout<<"There are 4 enemies to defeat"<<endl;
     cout<<"Prepare to fight"<<endl;
@@ -94,7 +94,6 @@ void level_library(Banya & banya, int *progress, int lose){
         }
     }
     if (cont==4){
-        progress[0]=1;
         cout<<"You defeated them all, and your reward is 50 points of power"<<endl;
         cout<<"You also recieve thunder spell, use it wisely"<<endl;
         banya.setsp2(1);
@@ -110,7 +109,7 @@ void level_library(Banya & banya, int *progress, int lose){
 }
 
 
-void level_armor(Banya & banya, int *progress, int lose){
+void level_armor(Banya & banya, int & lose){
     cout<<"You're in the Armor hall"<<endl;
     cout<<"There are 7 enemies to defeat"<<endl;
     cout<<"Prepare to fight"<<endl;
@@ -143,7 +142,6 @@ void level_armor(Banya & banya, int *progress, int lose){
         }
     }
     if (cont==7){
-        progress[2]=1;
         cout<<"You defeated them all, and your reward is 20 points of damage"<<endl;
         cout<<"You also recieve thunder spell, use it wisely"<<endl;
         banya.setfsp(1);
@@ -155,7 +153,7 @@ void level_armor(Banya & banya, int *progress, int lose){
     }
 }
 
-void level_music(Banya & banya, int *progress, int lose){
+void level_music(Banya & banya, int & lose){
     cout<<"You're in the Music hall"<<endl;
     cout<<"There are 5 enemies to defeat"<<endl;
     cout<<"Prepare to fight"<<endl;
@@ -190,7 +188,6 @@ void level_music(Banya & banya, int *progress, int lose){
         }
     }
     if (cont==7){
-        progress[2]=1;
         cout<<"You defeated them all, and your reward is 75 points of life"<<endl;
         cout<<"You also recieve fire spell, use it wisely"<<endl;
         banya.setsp1(1);

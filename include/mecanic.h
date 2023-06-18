@@ -11,9 +11,9 @@ void seehelp();
 void verifyevolve(Banya &); //implementar
 
 
-void level_library(Banya &, int *, int);
-void level_armor(Banya &, int *, int);
-void level_music(Banya &, int *, int);
+void level_library(Banya &, int&);
+void level_armor(Banya &, int&);
+void level_music(Banya &, int&);
 
 void verify_evolve(Banya &);
 
