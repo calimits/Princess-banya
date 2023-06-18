@@ -57,25 +57,34 @@ int main(){
                 case 2:
                 move(mov);
                 if (mov==1){
+                    for(int i=0;i<10;i++){
                     save(banya);
+                    }
                     cout<<"Saving..."<<endl;
                     pause();
                     clc();
                     level_library(banya, lose);
                 } else if (mov==2){
+                    for(int i=0;i<10;i++){
                     save(banya);
+                    }
                     cout<<"Saving..."<<endl;
                     pause();
                     clc();
                     level_armor(banya, lose);
                 } else if (mov==3){
+                    for(int i=0;i<10;i++){
+                    save(banya);
+                    }
                     cout<<"Saving..."<<endl;
                     pause();
                     clc();
                     save(banya);
                     level_music(banya,lose);
                 } else if (mov==4){
+                    for(int i=0;i<10;i++){
                     save(banya);
+                    }
                     cout<<"Saving..."<<endl;
                     pause();
                     clc();
@@ -109,7 +118,9 @@ int main(){
         //**************************************
 
         while(lose!=1){
-            load(banya);
+            for(int i=0;i<10;i++){
+                    load(banya);
+                    }
             cout<<"Loading..."<<endl;
             pause();
             clc();
@@ -123,25 +134,34 @@ int main(){
                 case 2:
                 move(mov);
                 if (mov==1){
+                    for(int i=0;i<10;i++){
                     save(banya);
+                    }
                     cout<<"Saving..."<<endl;
                     pause();
                     clc();
                     level_library(banya, lose);
                 } else if (mov==2){
+                    for(int i=0;i<10;i++){
                     save(banya);
+                    }
                     cout<<"Saving..."<<endl;
                     pause();
                     clc();
                     level_armor(banya, lose);
                 } else if (mov==3){
+                    for(int i=0;i<10;i++){
+                    save(banya);
+                    }
                     cout<<"Saving..."<<endl;
                     pause();
                     clc();
                     save(banya);
                     level_music(banya,lose);
                 } else if (mov==4){
+                    for(int i=0;i<10;i++){
                     save(banya);
+                    }
                     cout<<"Saving..."<<endl;
                     pause();
                     clc();
@@ -184,7 +204,7 @@ int main(){
         cout<<"Comeback soon"<<endl;
         break;
     }
-    
+    lose=0;
     }
     return 0;
 }
