@@ -16,17 +16,10 @@ void save(const Banya & banya, int *progress){
     saveb.seekp(0);
     saveb.write(reinterpret_cast<const char*>(&banya), sizeof(Banya));
 
-    //Saving game progress
-    ofstream savep("saves/progress.dat", ios::out);
-    savep.seekp(0);
-    for(int i=0; i<4; i++){
-        savep<<progress[i];
-
-    if (!saveb || !savep)
+    if (!saveb)
     cout<<"Uncorrect save"<<endl;
-
-    }
 }
+
 
 void load(Banya & banya, int *progress){
     //Load character
@@ -34,14 +27,6 @@ void load(Banya & banya, int *progress){
     loadb.seekg(0);
     loadb.read(reinterpret_cast<char *>(&banya), sizeof(Banya));
 
-    //load game progress
-    ifstream loadp("saves/progress.dat", ios::in);
-    loadp.seekg(0);
-    for(int i=0; i<4; i++){
-        loadp>>progress[i];
-    }
-
-    if (!loadb || !loadp)
+    if (!loadb)
     cout<<"Uncorrect load"<<endl;
-
 }

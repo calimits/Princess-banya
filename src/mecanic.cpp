@@ -131,6 +131,8 @@ void level_armor(Banya & banya, int *progress, int lose){
     if (cont==7){
         progress[2]=1;
         cout<<"You defeated them all, and your reward is 20 points of damage"<<endl;
+        cout<<"You also recieve thunder spell, use it wisely"<<endl;
+        banya.setfsp(1);
         banya.setdamage(banya.getdamage()+20);
     }
 

@@ -34,11 +34,10 @@ int main(){
 
     //Creating Banya
     Banya banya, banya2;
-    banya.setname("Mil");
-    int progress[4]={0,0,0,0};
+    banya.setname("Milyabra");
     //Variables to mecanics
     /*
-    int option=0, move=0, menu=0, progress[4]={0,0,0,0}, lose=0;
+    int option=0, move=0, menu=0, lose=0;
     banya.setdamage(1000);
     */
     save(banya, progress);
