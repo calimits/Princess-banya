@@ -165,11 +165,11 @@ void level_music(Banya & banya, int & lose){
     clc();
     //Creating dinamic enemies
     Enemy *enemies[5];
-    for(int i=0; i<2; i++){
+    for(int i=0; i<3; i++){
         enemies[i]=new Mage;
     }
 
-    for(int i=3; i<4; i++){
+    for(int i=3; i<5; i++){
         enemies[i]=new Guard;
     }
 

@@ -13,7 +13,7 @@ SRC = $(SRC1) funterminal.cpp mecanic.cpp saveandload.cpp fungame.cpp
 OBJ = $(patsubst %.cpp, %.o, $(SRC))
 
 #Flags I need
-FLAI = -I include -Wall -MMD -MP
+FLAI = -I include -Wall -MMD -MP 
 
 #creating directory
 all: $(EXE)
@@ -22,7 +22,7 @@ all: $(EXE)
 
 #compiling .o
 $(EXE): $(OBJ)
-	g++ $(OBJ) -o $(EXE)
+	g++ -pie -fpie $(OBJ) -o $(EXE)
 
 #compiling .cpp
 %.o: %.cpp
